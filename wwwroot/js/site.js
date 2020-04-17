@@ -1,13 +1,13 @@
 ﻿const pwdInput = document.getElementById('password');
 const show = document.getElementById('show-pwd');
 // const openNav = document.getElementById('open-nav');
-// const closeNav = document.getElementById('close-btn');
+const closeNav = document.getElementById('close-btn');
 const mobileNav = document.querySelector('.mobile-nav');
 const openDashNav = document.getElementById('open-dashNav');
 const closeDashNav = document.getElementById('close-dashNav');
 const mobileDashNav = document.querySelector('.mobile-dashNav');
 const navBtn = document.getElementById('nav-btn');
-let menu = document.getElementById('menu');
+let menuIcon = document.getElementById('menu-icon');
 
 function showPwd() {
     if (pwdInput.type === 'password'){
@@ -18,8 +18,13 @@ function showPwd() {
         pwdInput.type = 'password';
     }
 }
-function openMenu(){
-    mobileNav.classList.add('show');
+
+navBtn.addEventListener('click', landingNav);
+
+function landingNav(){
+    console.log('clicked');
+    menuIcon.classList.toggle('animate')
+    mobileNav.classList.toggle('show');
 }
 function closeMenu(){
     mobileNav.classList.remove('show');
