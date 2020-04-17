@@ -262,7 +262,7 @@
         .landing-nav .nav-links{
             display: none;
         }
-        #open-nav{
+        @* #open-nav{
             color: #fff;
             font-size: 2.5rem;
         }
@@ -288,7 +288,48 @@
         }
         #close-btn:active{
             transform: scale(0.95);
+        } *@
+
+        #nav-btn{
+            padding: 1rem 1rem;
         }
+        #nav-btn:hover{
+            cursor: pointer;
+        }
+        #nav-btn:active{
+            transform: scale(0.95);
+        }
+        #menu{
+            display: block;
+            position: relative;
+        }
+        #menu,
+        #menu::before,
+        #menu::after{
+            width: 1.75rem;
+            height: 3px;
+            background: #fff;
+
+            transition: transform 350ms ease-in-out, opacity 200ms linear;
+        }
+        #menu::before,
+        #menu::after{
+            content: '';
+            position: absolute;
+            left: 0;
+        }
+        #menu::before{bottom: 8px;}
+        #menu::after{top: 8px;}
+        .animate{
+            transform: rotate(45deg);
+        }
+        .animate::before{
+            opacity: 0;
+        }
+        .animate::after{
+            transform: rotate(90deg) translate(-9px);
+        }
+
         .mobile-nav.show{
             transform: translate(0);
             transition: transform 0.2s ease;
