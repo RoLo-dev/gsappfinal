@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GSAPP.Migrations
 {
-    public partial class FirstMigration : Migration
+    public partial class MyMigrations : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
