@@ -15,12 +15,6 @@
     #detail-content{
         width: 47%;
     }
-    .person-info-container .person-image{
-        width: 52%;
-    }
-    .person-info-container .person-info-text{
-        width: 45%;
-    }
 }
 @media screen and (max-width: 1200px){
     .width-link{
@@ -82,18 +76,6 @@
     .request-container,
     .completed-container{
         height: 50vh;
-    }
-    .person-info-container{
-        flex-direction: column;
-        align-items: center;
-    }
-    .person-info-container .person-image{
-        width: 60%;
-        height: 60vh;
-        margin-bottom: 1.5rem;
-    }
-    .person-info-container .person-info-text{
-        width: 100%;
     }
     #detail-main p,
     #helperDetails-main p{
@@ -311,10 +293,6 @@
     .leftCol{
         padding: 1.5rem;
     }
-    .person-info-container .person-image{
-        width: 65%;
-        height: 45vh;
-    }
     #map{
         margin-top: 1rem;
         height: 50vh;
@@ -324,6 +302,10 @@
     }
     .delete-btn{
         width: 65%;
+    }
+    .request-container,
+    .completed-container{
+        padding: 1.5rem;
     }
 
     /* HelperDetails page */
@@ -348,15 +330,5 @@
         width: 55%;
         height: 2rem;
         font-size: 1rem;
-    }
-}
-@media screen and (max-width: 550px){
-    /* Details page */
-    .person-info-container .person-image{
-        height: 38vh;
-    }
-    #helper-details .person-image{
-        height: 35vh;
-        width: 80%;
     }
 }

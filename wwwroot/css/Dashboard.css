@@ -95,9 +95,7 @@ table .view-btn:active{
     margin-top: 2rem;
 }
 .person-info-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
 }
 .person-info-container .person-image{
     height: 40vh;
