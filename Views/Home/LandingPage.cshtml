@@ -1,6 +1,6 @@
 ﻿@section Landing{
-    <link rel="stylesheet" href="~/css/LandingPage.css">
-    <link rel="stylesheet" href="~/css/LandingQueries.css" />
+    @* <link rel="stylesheet" href="~/css/LandingPage.css">
+    <link rel="stylesheet" href="~/css/LandingQueries.css" /> *@
 }
 
 <style>
@@ -256,30 +256,12 @@
         }
         /* Navigation */
         .mobile-nav,
-        #open-nav{
+        #nav-btn{
             display: block;
         }
         .landing-nav .nav-links{
             display: none;
         }
-        #close-btn{
-            font-size: 4rem;
-            color: #fff;
-            position: absolute;
-            top: 2%;
-            right: 10%;
-        }
-        #close-btn:hover,
-        #close-btn:focus{
-            cursor: pointer;
-            top: 2.5%;
-            transform: rotate(180deg);
-            transition: all 0.3s ease;
-        }
-        #close-btn:active{
-            transform: scale(0.95);
-        }
-
         #nav-btn{
             padding: 1rem 1rem;
         }
@@ -300,7 +282,7 @@
             height: 3px;
             background: #fff;
 
-            transition: transform 350ms ease-in-out, opacity 200ms linear;
+            transition: transform 300ms ease-in-out, opacity 200ms linear;
         }
         #menu-icon::before,
         #menu-icon::after{
@@ -326,12 +308,12 @@
         }
         .mobile-nav{
             width: 250px;
-            top: 70px;
-            height: 70vh;
-            position: fixed;
-            z-index: 5;
-            @* transform: translate(-250px); *@
-            transform: translate(0);
+            right: 0;
+            height: 38vh;
+            position: absolute;
+            z-index: 3;
+            border-bottom-left-radius: 100px;
+            transform: translate(250px);
             background-color: #243f51;
             display: flex;
             flex-direction: column;
@@ -458,7 +440,7 @@
             <a asp-action="SelectRole" asp-controller="Home" id="register-btn" class="standout-btn">Register</a>
         </li>
     </ul>
-    <span id="close-btn" onclick="closeMenu()">&times;</span>
+    @* <span id="close-LandingNav" onclick="closeLandingNav()">&times;</span> *@
 </div>
 
 <section id="banner">

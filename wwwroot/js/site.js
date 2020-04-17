@@ -1,13 +1,13 @@
 ﻿const pwdInput = document.getElementById('password');
 const show = document.getElementById('show-pwd');
-// const openNav = document.getElementById('open-nav');
-const closeNav = document.getElementById('close-btn');
-const mobileNav = document.querySelector('.mobile-nav');
+
 const openDashNav = document.getElementById('open-dashNav');
 const closeDashNav = document.getElementById('close-dashNav');
 const mobileDashNav = document.querySelector('.mobile-dashNav');
+
+const mobileNav = document.querySelector('.mobile-nav');
 const navBtn = document.getElementById('nav-btn');
-let menuIcon = document.getElementById('menu-icon');
+const menuIcon = document.getElementById('menu-icon');
 
 function showPwd() {
     if (pwdInput.type === 'password'){
@@ -20,15 +20,14 @@ function showPwd() {
 }
 
 navBtn.addEventListener('click', landingNav);
+// closeIcon.addEventListener('click', closeLandingNav);
 
 function landingNav(){
     console.log('clicked');
     menuIcon.classList.toggle('animate')
     mobileNav.classList.toggle('show');
 }
-function closeMenu(){
-    mobileNav.classList.remove('show');
-}
+
 function openDash(){
     mobileDashNav.classList.add('show');
 }
@@ -36,33 +35,8 @@ function closeDash(){
     mobileDashNav.classList.remove('show');
 }
 
-Array.prototype.forEach.call(
-    document.querySelectorAll(".upload-btn"),
-    function (button) {
-        const hiddenInput = button.parentElement.querySelector(
-            ".real-file"
-        );
 
-        const label = button.parentElement.querySelector(".file-callout");
-        const defaultLabelText = "No file selected";
 
-        label.textContent = defaultLabelText;
-        label.title = defaultLabelText;
-
-        button.addEventListener("click", function () {
-            hiddenInput.click();
-        });
-        hiddenInput.addEventListener("change", function () {
-            const filenameList = Array.prototype.map.call(hiddenInput.files, function (
-                file
-            ) {
-                return file.name;
-            });
-            label.textContent = filenameList.join(", ") || defaultLabelText;
-            label.title = label.textContent;
-        });
-    }
-);
 
 window.onload = function () {
     getCovidStats();
