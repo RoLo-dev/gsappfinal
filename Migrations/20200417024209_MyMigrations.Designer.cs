@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GSAPP.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20200417020638_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20200417024209_MyMigrations")]
+    partial class MyMigrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
