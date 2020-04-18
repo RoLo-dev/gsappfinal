@@ -35,7 +35,6 @@ function dashNav(){
 }
 
 
-
 window.onload = function () {
     getCovidStats();
 }
