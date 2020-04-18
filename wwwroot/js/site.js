@@ -1,11 +1,12 @@
 ﻿const pwdInput = document.getElementById('password');
 const show = document.getElementById('show-pwd');
 
-const dashNavBtn = document.getElementById('dash-btn');
 const mobileDashNav = document.querySelector('.mobile-dashNav');
+const dashNavBtn = document.getElementById('dash-btn');
 
 const mobileNav = document.querySelector('.mobile-nav');
 const navBtn = document.getElementById('nav-btn');
+
 const menuIcon = document.getElementById('menu-icon');
 
 function showPwd() {
@@ -19,7 +20,7 @@ function showPwd() {
 }
 
 navBtn.addEventListener('click', landingNav);
-dashBtn.addEventListener('click', dashNav);
+dashNavBtn.addEventListener('click', dashNav);
 
 function landingNav(){
     console.log('clicked');
@@ -28,10 +29,10 @@ function landingNav(){
 }
 
 function dashNav(){
+    console.log('clicked dash');
     menuIcon.classList.toggle('animate')
-    mobileDashNav.classList.add('show');
+    mobileDashNav.classList.toggle('show');
 }
-
 
 
 

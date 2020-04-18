@@ -249,7 +249,7 @@
     #menu-icon::after{
         width: 1.75rem;
         height: 3px;
-        background: #fff;
+        background: #243f51;
 
         transition: transform 300ms ease-in-out, opacity 200ms linear;
     }
@@ -257,17 +257,21 @@
     #menu-icon::after{
         content: '';
         position: absolute;
+        background: #243f51;
         left: 0;
     }
     #menu-icon::before{bottom: 8px;}
     #menu-icon::after{top: 8px;}
     .animate{
+        background: #fff !important;
         transform: rotate(45deg);
     }
     .animate::before{
+        background: #fff !important;
         opacity: 0;
     }
     .animate::after{
+        background: #fff !important;
         transform: rotate(90deg) translate(-9px);
     }
 
@@ -276,12 +280,15 @@
         transition: transform 0.2s ease;
     }
     .mobile-dashNav{
+        width: 200px;
+        right: 0;
         top: 0;
-        width: 250px;
-        height: 100vh;
-        position: fixed;
-        z-index: 5;
-        transform: translate(-250px);
+        height: 55vh;
+        position: absolute;
+        z-index: 3;
+        opacity: 0.9;
+        border-bottom-left-radius: 30px;
+        transform: translate(200px);
         background-color: #243f51;
         display: flex;
         flex-direction: column;
@@ -290,7 +297,7 @@
         transition: all 0.5s ease-out;
     }
     .mobile-dashNav ul li{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         text-align: center;
         margin-bottom: 2.5rem;
     }
