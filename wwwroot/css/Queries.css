@@ -266,11 +266,11 @@
         width: 200px;
         right: 0;
         top: 0;
-        height: 55vh;
+        height: 40vh;
         position: absolute;
         z-index: 3;
         opacity: 0.9;
-        border-bottom-left-radius: 30px;
+        border-bottom-left-radius: 10px;
         transform: translate(200px);
         background-color: #243f51;
         display: flex;
@@ -279,10 +279,16 @@
         align-items: center;
         transition: all 0.5s ease-out;
     }
+    .mobile-dashNav ul{
+        margin-top: 3rem;
+    }
     .mobile-dashNav ul li{
         font-size: 1.15rem;
         text-align: center;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .mobile-dashNav ul li:last-child{
+        margin-bottom: 0;
     }
     .mobile-dashNav ul li a{
         color: #fff;
