@@ -64,11 +64,10 @@ header .logo h1{
 }
 .nav-links ul li{
     display: inline-block;
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
 }
 .standout-btn{
     padding: 2px 20px;
-    border-radius: 5px;
     border-width: 2px;
     border-style: solid;
 }
