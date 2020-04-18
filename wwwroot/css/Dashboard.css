@@ -4,7 +4,7 @@
 }
 /* Dashboard navigation */
 .mobile-dashNav,
-#open-dashNav{
+#dash-btn{
     display: none;
 }
 #Dash-header .logo h1,
@@ -96,13 +96,6 @@ table .view-btn:active{
 }
 .person-info-container{
     width: 100%;
-}
-.person-info-container .person-image{
-    height: 40vh;
-    width: 40%;
-}
-.person-info-container .person-info-text{
-    width: 55%;
 }
 #detail-content{
     width: 45%;
