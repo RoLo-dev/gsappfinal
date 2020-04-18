@@ -33,9 +33,6 @@
     .reg-form-box{
         padding: 2rem;
     }
-    form .image-upload .file-callout{
-        height: 24px;
-    }
 
     /* HelperDetails page */
     #helper-details,
@@ -123,10 +120,6 @@
         width: 100%;
     }
 
-    form .image-upload .file-callout{
-        height: 20px;
-    }
-
     /* Dashboard page */
     #address-th,
     .address-td{
@@ -134,10 +127,6 @@
     }
 
     /* HelperDetails page */
-    #helper-details .person-image{
-        height: 45vh;
-        width: 70%;
-    }
     #helper-details,
     .accepted-container{
         width: 75%;
@@ -188,12 +177,6 @@
     }
     form .single-row .inputs{
         width: 100%;
-    }
-    form .image-upload{
-        margin-bottom: 1rem;
-    }
-    form .image-upload .upload-btn{
-        width: 35%;
     }
 
     .btn-alignment>*{
